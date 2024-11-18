@@ -37,7 +37,7 @@ app.post('/items', (req, res) => {
     mockData.push(newItem);
     res.status(201).json(newItem);
 });
-
+// mahusay
 app.put('/items/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const itemIndex = mockData.findIndex(item => item.id === id);
